@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_chat import message
 
 import openai
-openai.api_key = "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"
+openai.api_key = "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"
 st.set_page_config(page_title="Cheri-AI")
 st.balloons()
 import os
