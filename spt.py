@@ -1,11 +1,14 @@
 import streamlit as st
 from streamlit_chat import message
-
+import os
 import openai
-openai.api_key = "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"
+from dotenv import load_dotenv
+
+load_dotenv()
+openai.api_key = os.getenv('OPEN_API')
 st.set_page_config(page_title="Cheri-AI")
 st.balloons()
-import os
+
 
 if "key" not in st.session_state:
     st.session_state["key"]=[]
